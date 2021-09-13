@@ -3,17 +3,23 @@ import Router from 'vue-router'
 import HelloWorld from '@/components/HelloWorld'
 import Element from '@/components/Element'
 import Test from '@/components/Test'
-import NavMenu from '@/components/NavMenu'
+import MainDefault from '@/components/MainDefault'
 
 
 Vue.use(Router)
 
 export default new Router({
   routes: [
+
     {
       path: '/element',
       name: 'Element',
       component: Element
+    },
+    {
+      path: '/',
+      name: 'MainDefault',
+      component: MainDefault
     },
     {
       path: '/HelloWorld',
@@ -24,11 +30,6 @@ export default new Router({
       path: '/test',
       name: 'Test',
       component: Test
-    },
-    {
-      path: '/nav',
-      name: 'NavMenu',
-      component: NavMenu
     },
   ]
 })

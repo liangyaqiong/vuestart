@@ -26,7 +26,7 @@ urlpatterns = [
     path('testquery/', views.testquery, name='testquery'),
     path('testdelete/', views.testdelete, name='testdelete'),
     path('testqueryall/', views.testqueryall, name='testqueryall'),
-    path('testquerybyid/', views.testquerybyid, name='testquerybyid'),
+    # path('testquerybyid/', views.testquerybyid, name='testquerybyid'),
     path(r'', TemplateView.as_view(template_name="index.html")),
 
 ]
