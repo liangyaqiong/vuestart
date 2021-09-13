@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!-- <h1>{{ hello }}</h1>-->
+<!-- <input v-model="hello" />-->
+<!--view -->
+	    <div id='app'>
+           <h1>编辑姓名：<input type = 'text' v-model='Name'></h1>
+		   <h1>姓名：{{Name}}</h1>
+		   <h1>年龄：{{Age}}</h1>
+		   <h1>学校：{{School}}</h1>
+		</div>
+    <!-- 开发环境版本，包含了有帮助的命令行警告 -->
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+		<script type='text/javascript'>
+		  var data = {
+		  Name : '小明',
+		  Age : '18',
+		  School : '光明小学',
+		  }
+		  <!--model-view -->
+		  var vue = new Vue(
+		  {
+		   el : '#app',
+		   data : data,
+		  })
+		</script>
+</body>
+</html>
